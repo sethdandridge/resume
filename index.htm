@@ -30,6 +30,9 @@
       margin-left: auto;
       margin-right: auto;
     }
+    h1 {
+      font-size: 1.7em;
+    }
     header {
       display: flex;
       justify-content: space-between;
@@ -57,11 +60,14 @@
       line-height: 1.2em;
     }
     section {
-      padding-bottom: 1em;
+      padding-bottom: .8em;
       border-width: 0px 0px 1px 0px;
       border-style: solid; 
-      margin-top: .5em;
-      margin-bottom: .5em;
+      margin-top: .4em;
+      margin-bottom: .2em;
+    }
+    h2 + ul {
+      margin-top: .2em;
     }
     section#last-section {
       border-style: none;
@@ -89,18 +95,22 @@
     div.job-header {
       display: flex;
       justify-content: space-between;
-      padding-top: .5em;
+      padding-top: .2em;
     }
     div.job-title {
       float: right;
       align-self: flex-end;
     }
+    h2 + div.job-header h3 { 
+      margin-top: 0em;
+    }
     div.job-title h3 {
-      margin-top: .3em;
+      margin-top: .4em;
     }
     div.job-info {
       text-align: right;
       margin: 0em;
+      margin-top: .3em;
       line-height: 1.2em;
       align-self: flex-end;
     }
@@ -128,11 +138,12 @@
         <p><a href="https://sethdandridge.com">sethdandridge.com</a></p>
       </div>
     </header> 
+
     <section>
       <h2>Summary</h2>
-      <p>Full-stack Python engineer with 10+ years of professional software development and management experience. Passionate about solving difficult problems with cutting-edge technology and delivering ambitious projects. Able to quickly adapt to new areas of domain expertise, with experience in finance, legal, health care, and media.
-    </p></section>
-   
+      <p>Full-stack Python engineer with 10+ years of professional software development and management experience. <!-- Passionate about solving difficult problems with cutting-edge technology and delivering ambitious projects.--> Able to quickly adapt to new domains, with expertise in finance, legal tech, health care, and media.</p>
+    </section>
+
     <section>
       <h2>Skills</h2>
       <table id="skills">
@@ -144,21 +155,21 @@
  
           <td class="skills-section">Other Languages</td>
           <td>
-            Proficient in JavaScript. Familiar with Go, RegEx, and PHP. Dabbled in Bash, C#, Ruby, Perl, and Q/kdb+.
+            JavaScript proficient. Familiar with Go and PHP. Dabbled in Bash, C#, Ruby, Perl, and Q/kdb+.
           </td>
         </tr>
 
         <tr>
           <td class="skills-section">Databases</td>
           <td>
-            Significant database modeling experience, particularly PostgreSQL. Comfortable with SQLite, MySQL, SOLR, StatsD, and Redis.
+            Significant database modeling experience, particularly PostgreSQL. Comfortable with Redis, SQLite, MySQL, MSSQL, SOLR, and StatsD.
           </td>
         </tr>
 
         <tr>
           <td class="skills-section">Operating Systems</td>
           <td>
-            Adept navigator of Linux computing environments, especially Ubuntu. Proficient with MacOS and Windows.
+            Adept administrator of Linux-based systems with experience bringing machines to production readiness.
           </td>
         </tr>
         <tr>
@@ -166,26 +177,24 @@
         <tr>
           <td class="skills-section">Web Technologies</td>
           <td>
-            HTML,
-            CSS,
+            WSGI,
             NGINX,
             SSL,
-            REST,
-            JQuery,
-            Bootstrap,
-            Wordpress,
+            OpenAPI,
+            OAuth,
+            REST API design,
             React,
-            Apache
+            Apache.
           </td>
         </tr>
 
-        <tr>
+        <!-- <tr>
           <td class="skills-section">Paradigms</td>
           <td>
             Test-driven development (TDD),
             Agile
           </td>
-        </tr>
+        </tr> 
         <tr>
           <td class="skills-section">Tools</td>
           <td>
@@ -197,10 +206,23 @@
             SSH, 
             AWS, 
             Google Analytics,
-            PyCharm
+            PyCharm.
           </td>
-        </tr>
+        </tr> -->
       </tbody></table>
+    </section>
+
+    <section>
+      <h2>Technical Accomplishments</h2>
+      <ul>
+        <li>In the <a href="https://bughunter.withgoogle.com/profile/d61d6b22-5a58-4f37-ac6e-97bcfae090fc">Google Vulnerability Reward Program Hall of Fame</a> for discovering a security vulnerability in Google Docs</li>
+        <li>My article on Python's function attributes <a href="https://twitter.com/gvanrossum/status/1359325911993098241">was cited by Python inventor Guido van Russum</a></li>
+        <li>Made <a href="https://sojourn.house/">Sojourn</a>, a platform for sharing vacation homes with friends and family</li>
+        <li>Made <a href="https://my.corgiorgy.com/">Corgi Party</a>, a platform for making simple websites. It has 40 million visits and hosts 1+ million user-generated pages</li>
+        <li>Made <a href="https://twitter.com/itsavailable">@itsavailable</a>, a Twitter bot that programmatically discovers unregistered .com domains</li>
+        <!-- <li>Co-created <a href="http://citibikemap.com/">Citi Bike Map</a>, a site for viewing NYC bike share availability</li> -->
+        <li>Created <a href="https://github.com/sethdandridge/resume/blob/master/index.htm">this resume template</a> in HTML and CSS</li>
+      </ul>
     </section>
 
     <section>
@@ -217,12 +239,10 @@
         </div>
       </div>
       <ul>
-        <li>Led backend development for the company's largest group of products ($80 million+ in annual recurring revenue)</li>
-        <li>Half of the backend engineering organization (8 people) reported up through me</li>
-        <li>Rearchitected backend infrastructure to allow for a clearer separation of concerns between components, saving hundreds of hours of wasted development time caused by cross-team regressions</li>
+        <li>Led backend development for the company's largest group of products ($80 million+ in annual recurring revenue) with half the ~20 person backend engineering organization reporting to me</li>
+        <li>Saved hundreds of hours of development time by rearchitecting backend systems to allow clearer seperation of concerns between components, effectively eliminating cross-team regressions</li>
         <li>Developed the execution plan for products over 1+ year timespan</li>
         <!-- <li>Defined processes for managing offshore technical teams</li> -->
-        <li>Recognized as a "thought leader"—delivering technical presentations, making architectural decisions, and advising the engineering organization as a whole</li>
       </ul>
 
       <div class="job-header">
@@ -235,10 +255,11 @@
       </div>
       <ul>
         <li>Backend lead of the company's largest product ($22.5 million in annual recurring revenue)</li>
-        <li>Member of the architecture council responsible for specifying client-facing technical integrations. Designed APIs with an eye for simplicity of implementation and developer ergonomics</li>
+        <!-- <li>Member of the architecture council responsible for specifying client-facing technical integrations. Designed APIs with an eye for simplicity of implementation and developer ergonomics</li> -->
         <li>Developed hiring processes and conducted 70+ technical interviews and phone screens</li>
         <li>Defined coding standards and produced the onboarding documentation used by every new engineering hire</li>
-        <li>Addressed and triaged severity 1 production issues</li>
+        <!-- <li>Addressed and triaged severity 1 production issues</li> -->
+        <li>Recognized as a "thought leader"—delivering technical presentations, making architectural decisions, and advising the engineering organization as a whole</li>
         <!-- <li>Built tools for test data creation and management</li> -->
       </ul>
       <!-- <p>Skills used: People management, API design, system architecture, code review, technical documentation</p> -->
@@ -252,16 +273,15 @@
         </div>
       </div>
       <ul>
-        <li>Led the development of several complex, data-intensive features such as a GMail-style message center, a user permission management tool, and single sign-on integrations—all of which occured under strict data privacy constraints</li>
+        <li>Developed a variety of data-intensive features such a user permission management tool, an alert system for sending ~1 million monthly notifications, and a Gmail-style message center—all under strict data privacy constraints</li>
         <li>Introduced asychronous concurrency patterns that dramatically improved system performance, decreasing login time from ~5s to ~2s. These patterns were ultimately adapted by the entire engineering organization</li>
-        <li>Architected a scalable global alert system to enable clients to send ~1 million time-sensitive notifications/month to their customers</li>
         <li>Built an extensible billing system for PCI-compliant handling of recurring customer payments across multiple payment vendors</li>
         <li>Uncovered critical, unexploited security flaws potentially saving the company from substantial penalties</li>
       </ul>
 
       <div class="job-header">
         <div class="job-title">
-          <h3>LexisNexis</h3>
+          <h3>LexisNexis/Intelligize</h3>
           <h4>Technical Product Manager</h4>
         </div>
         <div class="job-info">
@@ -270,8 +290,8 @@
         </div> 
       </div>
       <ul> 
-        <li>Oversaw full rearchitecture of 2 of complex, critical applications in less than a year—integrating traditional and machine learning algorithms into the backend and migrating front-end components to React</li>
         <li>Co-managed 60+ developers</li>
+        <li>Rebuilt 2 critical applications in less than a year—integrating traditional and machine learning algorithms into the backend</li>
         <!-- <li>Interviewed customers, sales and support teams to ideate and prioritize projects</li> -->
         <!-- <li>Designed system components and delivered requirements to engineering teams</li> -->
       </ul> 
@@ -286,7 +306,7 @@
         </div>
       </div>
       <ul>
-        <li>Designed and built financial research and compliance software</li>
+        <!-- <li>Designed and built financial research and compliance software</li> -->
         <li>Built a machine learning algorithm to classify financial risk factors with over 95% accuracy. This technology was a key selling point when the company was purchased by Lexis Nexis in 2016</li>
         <!-- <li>Built an application for tracking and classifying correspondences between public companies and the SEC</li> -->
         <li>Built a system to match stock ticker codes with companies' public filings with 100% accuracy</li>
@@ -297,18 +317,16 @@
 
       <div class="job-header">
         <div class="job-title">
-          <h3>Intelligize</h3>
           <h4>Data Analyst</h4>
         </div>
         <div class="job-info">
-          <p>New York, NY</p>
           <p class="date">November 2014–September 2016</p>
         </div>
       </div>
       <ul>
-        <li>Wrote scripts and defined procedures for importing newly acquired data sets</li>
-        <li>Developed complex SQL reports across a database of 1000+ tables for business intelligence and sales teams</li>
-        <li>Developed and oversaw implementation of machine learning technology, including algorithms for classification, clustering, and document similarity analysis</li>
+        <!-- <li>Wrote scripts and defined procedures for importing newly acquired data sets</li> -->
+        <li>Developed SQL reports across a database of 1000+ tables for business intelligence and sales teams</li>
+        <li>Developed machine learning algorithms for classification, clustering, and document similarity</li>
       </ul>
       <!-- <p>Skills used: Python, SQL, MySQL, scikit-learn, Pandas, RegEx, iPython/Jupyter Notebook, Selenium, Google Analytics, C#</p>  -->
 
@@ -323,7 +341,7 @@
         </div>
       </div>
       <ul>
-        <li>Integrated a real-time social content delivery platform into customers' websites using JavaScript and CSS</li>
+        <li>Used modern front-end technologies to integrate a real-time social content delivery platform into customers' websites</li>
       </ul>
       <!-- <p>Skills used: JavaScript, CSS, HTML, jQuery, customer relations, working remote</p> -->
 
@@ -339,13 +357,12 @@
       </div>
       <ul>
         <li>Responsible for RSS Graffiti, a SaaS for automatically publishing content to social media, which powered over a quarter billion impression daily</li>
-        <li>Analyzed traffic data and specified algorithm improvements for implementation by engineering team</li>
-        <li>Managed customer support and social media marketing</li> 
+        <li>Managed customer support and social media marketing, reducing churn by ~20%</li> 
       </ul>
       <!-- <p>Skills used: Python, RSS, JIRA, RabbitMQ, MongoDB, product management, planning, customer support, UX design, data analysis</p> -->
     </section>
 
-    <section>
+    <section id="last-section">
       <h2>Education</h2>
       <div class="job-header">
         <div class="job-title">
@@ -358,19 +375,6 @@
         </div>
       </div>
     </section>
-
-    <section id="last-section">
-      <h2>Additional Information</h2>
-      <ul>
-        <li>Awarded a Google bug bounty and accepted into the <a href="https://bughunter.withgoogle.com/profile/d61d6b22-5a58-4f37-ac6e-97bcfae090fc">Google Vulnerability Reward Program Hall of Fame</a></li>
-        <li>Created <a href="https://sojourn.house/">Sojourn</a>, a platform for sharing vacation homes with friends and family</li>
-        <li>Created <a href="https://my.corgiorgy.com/">Corgi Party</a>, a platform for making simple websites. It has 40 million visits and hosts over 1 million user-generated pages</li>
-        <li>Created <a href="https://twitter.com/itsavailable">@itsavailable</a>, a Twitter bot that programmatically discovers unregistered .com domains</li>
-        <li>Co-created <a href="http://citibikemap.com/">Citi Bike Map</a>, a site for viewing NYC bike share availability
-        </li><li>Created <a href="https://github.com/sethdandridge/resume/blob/master/index.htm">this resume template</a> in HTML and CSS</li>
-      </ul>
-    </section>
-  </div>
 
   <script>
     // Google analytics
